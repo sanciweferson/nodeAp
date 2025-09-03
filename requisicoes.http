@@ -1,0 +1,35 @@
+### Listar todos os cursos (GET)
+GET http://localhost:3000/courses
+Accept: application/json
+
+###
+
+### Listar 1 curso (GET)
+GET http://localhost:3000/courses/4
+Accept: application/json
+
+###
+
+### Adicionar um novo curso (POST)
+POST http://localhost:3000/courses
+Content-Type: application/json
+
+{
+  "title": "Curso de Vue.js"
+}
+
+###
+
+### Atualizar um curso (PUT)
+PUT http://localhost:3000/courses/4
+Content-Type: application/json
+
+{
+  "title": "Curso de Vue.js Avançado"
+}
+
+###
+
+### Deletar um curso (DELETE)
+DELETE http://localhost:3000/courses/2
+Accept: application/json
