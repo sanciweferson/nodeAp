@@ -5,7 +5,7 @@ Accept: application/json
 ###
 
 ### Listar 1 curso (GET)
-GET http://localhost:3000/courses/4
+GET http://localhost:3000/courses/f2003e30-cf17-433d-9611-8b39dcf5a0b3
 Accept: application/json
 
 ###
@@ -14,21 +14,23 @@ Accept: application/json
 POST http://localhost:3000/courses
 Content-Type: application/json
 
-{
-  "title": "Curso de Vue.js"
-}
 
+{
+"title":
+
+}
 ###
 
 ### Atualizar um curso (PUT)
-PUT http://localhost:3000/courses/4
+PUT http://localhost:3000/courses/41ec5031-29b4-43a1-82b3-7f6ceabf4353
 Content-Type: application/json
 
 {
-  "title": "Curso de Vue.js Avançado"
+  "title": "Curso de Vue.js Avançadoss"
 }
 
 ###
+#npm i zod fastify-type-provider-zod
 
 ### Deletar um curso (DELETE)
 DELETE http://localhost:3000/courses/2
